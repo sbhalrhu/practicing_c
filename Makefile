@@ -1,15 +1,19 @@
-CFLAGS = -Wall -Wextra -Werror -std=gnu11 -pedantic
+CFLAGS = -Wall -Wextra -std=gnu11 -pedantic
 
-all: clpractice
+all: parent child
 
 debug: CFLAGS += -g
 debug: clean all
 
-clpractice: clpractice.o
-	gcc -o clpractice clpractice.o
+child: child.o
+	gcc -o child child.o
+
+parent: parent.o
+	gcc -o parent parent.o
 
 %.o: %.c
 	gcc $(CFLAGS) -c $<
 
-clean:
+
+clean: 
 	rm -f *.o
