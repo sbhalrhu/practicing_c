@@ -16,7 +16,7 @@ int extractbs(char *bitstring) {
         }
     }
     buf[7] = '\0';
-    if ((count %2) == 0) { return (bitstring = buf); }
+    if ((count %2) == 0) { return (0x7F & (int)bitstring); }
     return EOF;
 
 }
