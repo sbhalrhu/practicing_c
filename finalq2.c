@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 int main(int argc, char *argv[]) {
-    int bitstring = extractbs(argv[1]);
+    char bitstring = extractbs(argv[1]);
 
     if (argc < 2) {
         printf("Usage: ./finalq2 <bitstring>\n");
