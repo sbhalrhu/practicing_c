@@ -2,15 +2,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+char extractbs(unsigned char bitstring);
+
 int main(int argc, char *argv[]) {
-    char bitstring = extractbs(argv[1]);
 
     if (argc < 2) {
         printf("Usage: ./finalq2 <bitstring>\n");
         return EXIT_FAILURE;
 
     }
-
+    char bitstring = extractbs(argv[1][0]);
     printf("Bitstring is %d.", (int)bitstring);
     return EXIT_SUCCESS;
 }
