@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 int main(int argc, char *argv[]) {
-
+    return extractbs(argv[1]);
 
 }
 
