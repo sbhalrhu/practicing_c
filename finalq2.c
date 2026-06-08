@@ -2,7 +2,8 @@
 #include <stdio.h>
 
 int main(int argc, char *argv[]) {
-    return extractbs(argv[1]);
+    int bitstring = extractbs(argv[1]);
+    printf("Bitstring is %d.", (int)bitstring);
 
 }
 
